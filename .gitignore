@@ -20,3 +20,5 @@ erl_crash.dump
 *.ez
 
 .idea
+
+apps/vendkit_eng/config/dev.exs
