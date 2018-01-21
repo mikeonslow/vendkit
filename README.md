@@ -1,4 +1,4 @@
-# Vendkit
+# VendKit
 
 ### An application for tracking inventory of and allowing for purchase of refreshments
 
