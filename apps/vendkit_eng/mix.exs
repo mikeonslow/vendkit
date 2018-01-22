@@ -17,7 +17,8 @@ defmodule VendkitEng.Mixfile do
 
   # Run "mix help compile.app" to learn about applications.
   def application do
-    [ applications: [:logger, :ecto, :mariaex],
+    [ mod: {VendkitEng.Application, []},
+      applications: [:logger, :ecto, :mariaex],
       extra_applications: [:logger]
     ]
   end
@@ -26,6 +27,8 @@ defmodule VendkitEng.Mixfile do
 
   defp deps do
     [
+      {:phoenix, "~> 1.3"},
+      {:phoenix_html, "~> 2.3"},
       {:mariaex, ">= 0.0.0"},
       {:ecto, "~> 2.1.4"}
     ]

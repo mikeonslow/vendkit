@@ -22,3 +22,4 @@ erl_crash.dump
 .idea
 
 apps/vendkit_eng/config/dev.exs
+apps/vendkit_eng/config/test.exs

@@ -1,8 +1,8 @@
 defmodule VendkitEngTest do
   use ExUnit.Case
-  doctest VendkitEng
+#  doctest VendkitEng
 
-  test "greets the world" do
-    assert VendkitEng.hello() == :world
+  test "a placeholder" do
+    true
   end
 end

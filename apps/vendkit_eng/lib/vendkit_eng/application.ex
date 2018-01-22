@@ -9,13 +9,13 @@ defmodule VendkitEng.Application do
 
     import Supervisor.Spec, warn: false
 
-    VendkitEng.Repo.start_link()
+#    VendkitEng.Repo.start_link()
 
     Logger.configure([level: :debug])
 
     # Define workers and child supervisors to be supervised
     children = [
-      supervisor(VendkitEng.Repo, [])
+      worker(VendkitEng.Repo, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
