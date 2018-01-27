@@ -29,17 +29,7 @@ use Mix.Config
 #
 
 # General application configuration
-config :vendkit_eng,
-       ecto_repos: [VendkitEng.Repo]
+config :vending,
+       ecto_repos: [Vending.Repo]
 
 import_config "#{Mix.env}.exs"
-
-
-#code	varchar(100)	NO
-#description	varchar(100)	NO
-#created	timestamp	NO		CURRENT_TIMESTAMP
-#createdBy	int(10) unsigned	NO		0
-#updated	timestamp	NO		CURRENT_TIMESTAMP	on update CURRENT_TIMESTAMP
-#updatedBy	int(10) unsigned	NO		0
-#deleted	timestamp	YES
-#active	tinyint(1) unsigned	NO		1

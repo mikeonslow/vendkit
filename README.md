@@ -16,3 +16,9 @@
   * Purchase Item(s)
     * Scan Item(s)
     * Confirm Purchase
+
+#### Applications
+* auth
+* vending
+* vending_web
+* vending_admin

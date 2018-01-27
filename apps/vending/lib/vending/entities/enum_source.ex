@@ -1,7 +1,7 @@
-defmodule VendkitEng.EnumSource do
+defmodule Vending.EnumSource do
   use Ecto.Schema
   import Ecto.Changeset
-  alias VendkitEng.EnumSource
+  alias Vending.EnumSource
 
 
   schema "enum_sources" do
@@ -12,7 +12,7 @@ defmodule VendkitEng.EnumSource do
     field :inserted_by, :integer
     field :updated_by, :integer
 
-    has_many :enum_codes, CbsEng.EnumCode, foreign_key: :source_id, references: :id
+    has_many :enum_codes, Vending.EnumCode, foreign_key: :source_id, references: :id
 
     timestamps()
   end

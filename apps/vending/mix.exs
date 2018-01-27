@@ -3,7 +3,7 @@ defmodule VendkitEng.Mixfile do
 
   def project do
     [
-      app: :vendkit_eng,
+      app: :vending,
       version: "0.1.0",
       build_path: "../../_build",
       config_path: "../../config/config.exs",
@@ -17,7 +17,7 @@ defmodule VendkitEng.Mixfile do
 
   # Run "mix help compile.app" to learn about applications.
   def application do
-    [ mod: {VendkitEng.Application, []},
+    [ mod: {Vending.Application, []},
       applications: [:logger, :ecto, :mariaex],
       extra_applications: [:logger]
     ]
