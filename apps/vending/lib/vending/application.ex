@@ -9,7 +9,7 @@ defmodule Vending.Application do
 
     import Supervisor.Spec, warn: false
 
-#    VendkitEng.Repo.start_link()
+#    Vending.Repo.start_link()
 
     Logger.configure([level: :debug])
 

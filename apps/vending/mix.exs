@@ -1,4 +1,4 @@
-defmodule VendkitEng.Mixfile do
+defmodule Vending.Mixfile do
   use Mix.Project
 
   def project do
