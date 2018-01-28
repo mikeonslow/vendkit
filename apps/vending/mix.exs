@@ -31,7 +31,8 @@ defmodule Vending.Mixfile do
       {:phoenix, "~> 1.3"},
       {:phoenix_html, "~> 2.3"},
       {:mariaex, ">= 0.0.0"},
-      {:ecto, "~> 2.1.4"}
+      {:ecto, "~> 2.1.4"},
+      {:dialyxir, "~> 0.5", only: [:dev], runtime: false}
     ]
   end
 end
