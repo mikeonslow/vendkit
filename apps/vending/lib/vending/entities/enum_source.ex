@@ -3,16 +3,14 @@ defmodule Vending.EnumSource do
   import Ecto.Changeset
   alias Vending.EnumSource
 
-
   schema "enum_sources" do
+    field(:code, :string)
+    field(:deleted_by, :integer)
+    field(:description, :string)
+    field(:inserted_by, :integer)
+    field(:updated_by, :integer)
 
-    field :code, :string
-    field :deleted_by, :integer
-    field :description, :string
-    field :inserted_by, :integer
-    field :updated_by, :integer
-
-    has_many :enum_codes, Vending.EnumCode, foreign_key: :source_id, references: :id
+    has_many(:enum_codes, Vending.EnumCode, foreign_key: :source_id, references: :id)
 
     timestamps()
   end

@@ -6,12 +6,11 @@ defmodule Vending.Application do
   use Application
 
   def start(_type, _args) do
-
     import Supervisor.Spec, warn: false
 
-#    Vending.Repo.start_link()
+    #    Vending.Repo.start_link()
 
-    Logger.configure([level: :debug])
+    Logger.configure(level: :debug)
 
     # Define workers and child supervisors to be supervised
     children = [

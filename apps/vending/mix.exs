@@ -10,14 +10,15 @@ defmodule Vending.Mixfile do
       deps_path: "../../deps",
       lockfile: "../../mix.lock",
       elixir: "~> 1.5",
-      start_permanent: Mix.env == :prod,
+      start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
   end
 
   # Run "mix help compile.app" to learn about applications.
   def application do
-    [ mod: {Vending.Application, []},
+    [
+      mod: {Vending.Application, []},
       applications: [:logger, :ecto, :mariaex],
       extra_applications: [:logger]
     ]
@@ -33,5 +34,4 @@ defmodule Vending.Mixfile do
       {:ecto, "~> 2.1.4"}
     ]
   end
-
 end
