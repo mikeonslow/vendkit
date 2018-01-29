@@ -1,7 +1,7 @@
-defmodule Vending.Vending.User do
+defmodule Vending.User do
   use Ecto.Schema
   import Ecto.Changeset
-  alias Vending.Vending.User
+  alias Vending.User
 
   schema "users" do
     field(:deleted_by, :integer)
