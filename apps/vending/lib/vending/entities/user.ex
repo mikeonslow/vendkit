@@ -26,7 +26,6 @@ defmodule Vending.User do
       :password_hash,
       :first_name,
       :last_name,
-      :user_name,
       :inserted_by,
       :updated_by,
       :deleted_by,
@@ -37,11 +36,10 @@ defmodule Vending.User do
       :password_hash,
       :first_name,
       :last_name,
-      :user_name,
       :inserted_by,
       :updated_by,
-      :deleted_by,
       :role_id
     ])
+    |> unique_constraint(:email)
   end
 end
