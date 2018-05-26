@@ -23,3 +23,5 @@ erl_crash.dump
 
 apps/vendkit_eng/config/dev.exs
 apps/vendkit_eng/config/test.exs
+
+local
