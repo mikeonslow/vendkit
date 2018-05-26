@@ -29,7 +29,6 @@ use Mix.Config
 #
 
 # General application configuration
-config :vending,
-       ecto_repos: [Vending.Repo]
+config :vending, ecto_repos: [Vending.Repo]
 
-import_config "#{Mix.env}.exs"
+import_config "#{Mix.env()}.exs"

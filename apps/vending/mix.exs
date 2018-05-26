@@ -19,7 +19,7 @@ defmodule Vending.Mixfile do
   def application do
     [
       mod: {Vending.Application, []},
-      applications: [:logger, :ecto, :mariaex],
+      applications: [:logger, :ecto, :mariaex, :bamboo],
       extra_applications: [:logger]
     ]
   end
@@ -32,7 +32,8 @@ defmodule Vending.Mixfile do
       {:phoenix_html, "~> 2.3"},
       {:mariaex, ">= 0.0.0"},
       {:ecto, "~> 2.1.4"},
-      {:dialyxir, "~> 0.5", only: [:dev], runtime: false}
+      {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
+      {:bamboo, git: "https://github.com/thoughtbot/bamboo.git", override: true}
     ]
   end
 end
