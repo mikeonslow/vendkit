@@ -1,3 +1,3 @@
-defmodule MyApp.Mailer do
+defmodule Vending.Mailer do
   use Bamboo.Mailer, otp_app: :vending
 end
