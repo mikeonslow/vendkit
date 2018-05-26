@@ -44,9 +44,7 @@ defmodule Vending.Item do
       :size_unit_id,
       :price,
       :inserted_by,
-      :updated_by,
-      :deleted_at,
-      :deleted_by
+      :updated_by
     ])
   end
 end
