@@ -1,15 +1,18 @@
 defmodule Vending.Helpers.Email do
+  use Bamboo.Phoenix, view: Vending.EmailView
+
   import Bamboo.Email
 
   alias Vending.{Mailer}
 
   def test_email do
+    inspect(base_email() |> render("email.html"))
+  end
+
+  defp base_email do
     new_email()
-    |> to("foo@example.com")
-    |> from("me@example.com")
-    |> subject("Welcome!!!")
-    |> html_body("<strong>Welcome</strong>")
-    |> text_body("welcome")
-    |> Mailer.deliver_now()
+    |> from("no-reply@mydomain.io")
+    |> to("anyone@mydomain.io")
+    |> put_html_layout({Vending.LayoutView, "email.html"})
   end
 end
